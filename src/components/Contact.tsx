@@ -32,8 +32,15 @@ const Contact = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-white">
-      <div className="max-w-4xl mx-auto">
+    <section className="py-20 px-6 bg-white relative overflow-hidden">
+      {/* Декоративные геометрические фигуры */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-20 left-10 w-40 h-40 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full"></div>
+        <div className="absolute bottom-10 right-10 w-60 h-60 bg-gradient-to-br from-purple-300 to-purple-500 rounded-full"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-purple-200 rotate-45"></div>
+      </div>
+
+      <div className="max-w-4xl mx-auto relative z-10">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl font-bold text-gray-900 mb-4 font-montserrat">
             Давайте работать вместе

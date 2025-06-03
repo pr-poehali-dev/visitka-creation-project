@@ -42,8 +42,27 @@ const Skills = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-gradient-to-br from-purple-50 to-slate-50">
-      <div className="max-w-6xl mx-auto">
+    <section className="py-20 px-6 bg-gradient-to-br from-purple-50 to-slate-50 relative overflow-hidden">
+      {/* Фоновые изображения технологий */}
+      <div className="absolute inset-0 opacity-5">
+        <img
+          src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=200&h=200&fit=crop"
+          alt=""
+          className="absolute top-10 left-10 w-24 h-24 object-cover rounded-lg"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=200&h=200&fit=crop"
+          alt=""
+          className="absolute bottom-20 right-20 w-32 h-32 object-cover rounded-lg"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1484417894907-623942c8ee29?w=200&h=200&fit=crop"
+          alt=""
+          className="absolute top-1/3 right-10 w-20 h-20 object-cover rounded-lg"
+        />
+      </div>
+
+      <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl font-bold text-gray-900 mb-4 font-montserrat">
             Навыки и технологии
